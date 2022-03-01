@@ -12,7 +12,7 @@ public class Project_chatbot {
         Resposta resp1 = new RespostaSimples("seu nome", "Eu sou o anhembiBot");
         Resposta resp2 = new RespostaSimples("oi", "Olá, no que posso ajudar?");
         Resposta resp3 = new RespostaSimples("sabe contar piadas", "Contar piada é minha especialidade!");
-        Resposta resp4 = new RespostaSimples("voce sabe fazer", "Eu sei contar piada e resolver a formula de bhaskara");
+        Resposta resp4 = new RespostaSimples("voce sabe fazer", "Eu sei contar piadas, sei resolver a formula de bhaskara e posso calcular investimentos pra você!");
         Resposta resp5 = new RespostaSimples("obrigado", "Estou aqui pra isso!");
         Resposta resp6 = new RespostaSimples("tchau", "Tchau! Qualquer coisa estou a disposição!");
 
@@ -39,6 +39,8 @@ public class Project_chatbot {
 
         /*O parâmetro passado nesse método será a key para o bot responder a Data*/
         Resposta resp9 = new RespostaData("data");
+        
+        Resposta resp12 = new RespostaInvestimento("investimento");
 
         /*Após criar todas as respostas, você deve adicionar elas em um array de respostas na classe Chatbot*/
         bot.adiciona(resp1);
@@ -52,6 +54,7 @@ public class Project_chatbot {
         bot.adiciona(resp9);
         bot.adiciona(resp10);
         bot.adiciona(resp11);
+        bot.adiciona(resp12);
 
         System.out.println("-----------------------------------");
 

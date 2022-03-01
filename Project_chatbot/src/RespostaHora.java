@@ -14,9 +14,7 @@ public class RespostaHora extends Resposta {
         if(this.palavraChave == palavraChave){
             System.out.println("Key '" + this.palavraChave +"' + resposta registrados com Sucesso!");
         }
-        else{
-            System.out.println("Palavra invalida");
-        }
+        
     }
 
     public Date getData() {

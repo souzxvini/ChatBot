@@ -13,9 +13,7 @@ public class RespostaData extends Resposta {
         this.palavraChave = palavraChave;
         if (this.palavraChave == palavraChave) {
             System.out.println("Key '" + this.palavraChave + "' + resposta registrados com sucesso!");
-        } else {
-            System.out.println("Palavra Inválida");
-        }
+        } 
     }
 
     public String getPalavraChave() {

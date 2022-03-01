@@ -8,7 +8,7 @@ public class RespostaAleatoria extends Resposta{
     Random random = new Random();
 
     public RespostaAleatoria(String palavraChave, ArrayList piadas) {
-        this.palavraChave = "uma piada";
+        this.palavraChave = palavraChave;
         if(this.palavraChave == palavraChave ){
             System.out.println("Key '" + this.palavraChave +"' + resposta registrados com Sucesso!");
             this.piadas = piadas;
