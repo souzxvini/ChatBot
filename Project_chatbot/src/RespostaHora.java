@@ -10,7 +10,7 @@ public class RespostaHora extends Resposta {
 
     public RespostaHora(String palavraChave) {
         this.resposta = data.toString();
-        this.palavraChave = "horas";
+        this.palavraChave = palavraChave;
         if(this.palavraChave == palavraChave){
             System.out.println("Key '" + this.palavraChave +"' + resposta registrados com Sucesso!");
         }
@@ -42,8 +42,6 @@ public class RespostaHora extends Resposta {
     public void setResposta(String resposta) {
         this.resposta = resposta;
     }
-
-    
 
     @Override
     public String produz() {

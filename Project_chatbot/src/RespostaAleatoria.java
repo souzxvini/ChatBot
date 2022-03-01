@@ -34,8 +34,6 @@ public class RespostaAleatoria extends Resposta{
         this.resposta = resposta;
     }
     
-    
-
     @Override
     public String produz() {
         for (int i = 0; i < this.piadas.size(); i++) {

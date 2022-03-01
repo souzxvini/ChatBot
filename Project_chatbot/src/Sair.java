@@ -2,7 +2,7 @@
 public class Sair extends Resposta {
     
     public Sair(String palavraChave) {
-        this.palavraChave = "/sair do chat";
+        this.palavraChave = palavraChave;
         if (this.palavraChave == palavraChave) {
             System.out.println("Key '" + this.palavraChave + "' registrada com Sucesso!");
         }

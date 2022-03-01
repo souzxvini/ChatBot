@@ -10,7 +10,7 @@ public class RespostaData extends Resposta {
 
     public RespostaData(String palavraChave) {
         this.resposta = data.toString();
-        this.palavraChave = "data";
+        this.palavraChave = palavraChave;
         if (this.palavraChave == palavraChave) {
             System.out.println("Key '" + this.palavraChave + "' + resposta registrados com sucesso!");
         } else {

@@ -19,10 +19,20 @@ public class Chatbot {
                 String resposta1 = respostas.get(i).produz();
                 System.out.println("BOT: " + resposta1);
             }
-            
-            
         }
     }
+    
+    public String numero(){
+        String n = "vinicius";
+        return n;
+    }
+    
+    
+    
+    
+    
+    
+    
     
     
 }

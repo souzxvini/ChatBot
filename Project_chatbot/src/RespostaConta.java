@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class RespostaConta extends Resposta {
 
     public RespostaConta(String palavraChave) {
-        this.palavraChave = "bhaskara";
+        this.palavraChave = palavraChave;
         if (this.palavraChave == palavraChave) {
             System.out.println("Palavra '" + this.palavraChave + "' registrada com sucesso");
         }

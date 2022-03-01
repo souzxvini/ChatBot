@@ -6,8 +6,6 @@ public class RespostaSimples extends Resposta {
         System.out.println("Key '" +this.palavraChave +"' + resposta registrados com sucesso!");
     }
 
-    
-
     @Override
     public String produz() {
         return this.resposta;
