@@ -7,7 +7,7 @@ public class Project_chatbot {
     public static void main(String[] args) {
 
         Chatbot bot = new Chatbot();
-        
+
         // criando palavras chaves e respostas, o primeiro parametro é a palavra chave e o segundo parametro é a resposta
         Resposta resp1 = new RespostaSimples("seu nome", "Eu sou o anhembiBot");
         Resposta resp2 = new RespostaSimples("oi", "Olá, no que posso ajudar?");
@@ -15,31 +15,31 @@ public class Project_chatbot {
         Resposta resp4 = new RespostaSimples("voce sabe fazer", "Eu sei contar piada e resolver a formula de bhaskara");
         Resposta resp5 = new RespostaSimples("obrigado", "Estou aqui pra isso!");
         Resposta resp6 = new RespostaSimples("tchau", "Tchau! Qualquer coisa estou a disposição!");
-        
+
         /*O parâmetro passado nesse método será a key para o bot iniciar o cálculo da formula de bhaskara*/
         Resposta resp10 = new RespostaConta("bhaskara");
-        
+
         /*O parãmetro que for passado nesse método, ao ser digitado pelo usuário no chat, irá encerrar a conversa*/
         Resposta resp11 = new Sair("/sair do chat");
 
         /*Aqui eu criei um array list para armazenar piadas*/
         ArrayList<String> piadas = new ArrayList();
         piadas.add("Qual é o peixe que pulou da monttanha? AAAAAAAAAAtum");
-        piadas.add("Você sabe como faz pra deixar um carteiro triste? \n"
-                + "\n"
-                + "Você mata a familia dele.");
+        piadas.add("Sabe o que o melão estava fazendo de mãos dadas com o mamão perto de Copacabana?\n"
+                + "Levando o mamão papaya."
+        );
         piadas.add("Você sabe como deixar alguém curioso?\n"
                 + "\n"
                 + "Eu conto amanhã.");
         /*Aqui, o primeiro parâmetro é a palavra chave que vai retornar alguma piada do array list piadas*/
         Resposta resp7 = new RespostaAleatoria("uma piada", piadas);
-        
+
         /*O parâmetro passado nesse método será a key para o bot responder as horas*/
         Resposta resp8 = new RespostaHora("horas");
-        
+
         /*O parâmetro passado nesse método será a key para o bot responder a Data*/
         Resposta resp9 = new RespostaData("data");
-        
+
         /*Após criar todas as respostas, você deve adicionar elas em um array de respostas na classe Chatbot*/
         bot.adiciona(resp1);
         bot.adiciona(resp2);
@@ -62,12 +62,12 @@ public class Project_chatbot {
         System.out.println("Digite o seu nome para iniciar a conversa:");
         nomeUsuario = entrada.nextLine();
         System.out.println("-----------------------------------");
-        
-        while(true) {
+
+        while (true) {
             System.out.print(nomeUsuario + ": ");
             textoUsuario = entrada.nextLine();
             bot.processar(textoUsuario);
-            
+
         }
     }
 }
