@@ -8,16 +8,15 @@ public class RespostaAleatoria extends Resposta{
     Random random = new Random();
 
     public RespostaAleatoria(String palavraChave, ArrayList piadas) {
-        this.palavraChave = "piada";
-        if(this.palavraChave == palavraChave){
-            System.out.println("palavra registrada com sucesso");
+        this.palavraChave = "uma piada";
+        if(this.palavraChave == palavraChave ){
+            System.out.println("Key '" + this.palavraChave +"' + resposta registrados com Sucesso!");
             this.piadas = piadas;
         }
         else{
             System.out.println("palavra invalida");
         }
     }
-    
 
     public String getPalavraChave() {
         return palavraChave;
@@ -36,15 +35,6 @@ public class RespostaAleatoria extends Resposta{
     }
     
     
-    @Override
-    public boolean verifica(String entrada) {
-        if(this.palavraChave == entrada){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
 
     @Override
     public String produz() {

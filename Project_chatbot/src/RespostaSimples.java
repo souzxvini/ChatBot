@@ -3,23 +3,10 @@ public class RespostaSimples extends Resposta {
     public RespostaSimples(String palavraChave, String resposta) {
         this.palavraChave = palavraChave;
         this.resposta = resposta;
-        if(this.palavraChave == palavraChave){
-            System.out.println("Palavra Registrada com sucesso");
-        }
-        else{
-            System.out.println("Palavra inválida");
-        }
+        System.out.println("Key '" +this.palavraChave +"' + resposta registrados com sucesso!");
     }
 
-    @Override
-    public boolean verifica(String entrada) {
-        if(this.palavraChave == entrada){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
+    
 
     @Override
     public String produz() {

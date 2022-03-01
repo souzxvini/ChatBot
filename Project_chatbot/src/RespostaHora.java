@@ -1,16 +1,18 @@
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
 public class RespostaHora extends Resposta {
     
     Date data = new Date();
+    String hora = new SimpleDateFormat("HH:mm:ss").format(data);
 
     public RespostaHora(String palavraChave) {
         this.resposta = data.toString();
-        this.palavraChave = "hora";
+        this.palavraChave = "horas";
         if(this.palavraChave == palavraChave){
-            System.out.println("Palavra Registrada com Sucesso");
+            System.out.println("Key '" + this.palavraChave +"' + resposta registrados com Sucesso!");
         }
         else{
             System.out.println("Palavra invalida");
@@ -41,18 +43,11 @@ public class RespostaHora extends Resposta {
         this.resposta = resposta;
     }
 
-    @Override
-    public boolean verifica(String palavraChave) {
-        if (this.palavraChave == palavraChave) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    
 
     @Override
     public String produz() {
-        return this.resposta = data.toString();
+        return this.resposta = hora;
     }
 
 }
