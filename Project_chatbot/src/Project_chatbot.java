@@ -24,7 +24,7 @@ public class Project_chatbot {
 
         /*Aqui eu criei um array list para armazenar piadas*/
         ArrayList<String> piadas = new ArrayList();
-        piadas.add("Qual é o peixe que pulou da monttanha? AAAAAAAAAAtum");
+        piadas.add("Qual é o peixe que pulou da monttanha? AAAAAAAAAtum");
         piadas.add("Sabe o que o melão estava fazendo de mãos dadas com o mamão perto de Copacabana?\n"
                 + "Levando o mamão papaya."
         );
