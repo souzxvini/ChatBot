@@ -37,7 +37,7 @@ public class RespostaTabuada extends Resposta {
             case "n":
                 break;
             default:
-                System.out.println("BOT: Não entendi,insira sua resposta novamente(S/N)  **ultima tentativa**");
+                System.out.println("BOT: Nao entendi,insira sua resposta novamente(S/N)  **ultima tentativa**");
                 this.resposta = entrada.next();
                 switch (this.resposta) {
                     case "S":
