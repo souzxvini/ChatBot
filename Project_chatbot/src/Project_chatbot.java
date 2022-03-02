@@ -12,7 +12,10 @@ public class Project_chatbot {
         Resposta resp1 = new RespostaSimples("seu nome", "Eu sou o anhembiBot");
         Resposta resp2 = new RespostaSimples("oi", "Olá, no que posso ajudar?");
         Resposta resp3 = new RespostaSimples("sabe contar piadas", "Contar piada é minha especialidade!");
+        Resposta resp13 = new RespostaSimples("sabe contar piada", "Contar piada é minha especialidade!");
+        
         Resposta resp4 = new RespostaSimples("voce sabe fazer", "Eu sei contar piadas, sei resolver a formula de bhaskara e posso calcular investimentos pra você!");
+        
         Resposta resp5 = new RespostaSimples("obrigado", "Estou aqui pra isso!");
         Resposta resp6 = new RespostaSimples("tchau", "Tchau! Qualquer coisa estou a disposição!");
 
@@ -20,7 +23,7 @@ public class Project_chatbot {
         Resposta resp10 = new RespostaConta("bhaskara");
 
         /*O parãmetro que for passado nesse método, ao ser digitado pelo usuário no chat, irá encerrar a conversa*/
-        Resposta resp11 = new Sair("/sair do chat");
+        Resposta resp11 = new Sair("/sair");
 
         /*Aqui eu criei um array list para armazenar piadas*/
         ArrayList<String> piadas = new ArrayList();
@@ -41,6 +44,8 @@ public class Project_chatbot {
         Resposta resp9 = new RespostaData("data");
         
         Resposta resp12 = new RespostaInvestimento("investimento");
+        
+        Resposta resp14 = new RespostaTabuada("tabuada");
 
         /*Após criar todas as respostas, você deve adicionar elas em um array de respostas na classe Chatbot*/
         bot.adiciona(resp1);
@@ -55,7 +60,9 @@ public class Project_chatbot {
         bot.adiciona(resp10);
         bot.adiciona(resp11);
         bot.adiciona(resp12);
-
+        bot.adiciona(resp13);
+        bot.adiciona(resp14);
+        
         System.out.println("-----------------------------------");
 
         Scanner entrada = new Scanner(System.in);
