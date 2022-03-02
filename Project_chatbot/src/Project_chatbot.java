@@ -13,6 +13,7 @@ public class Project_chatbot {
         Resposta resp2 = new RespostaSimples("oi", "Olá, no que posso ajudar?");
         Resposta resp3 = new RespostaSimples("sabe contar piadas", "Contar piada é minha especialidade!");
         Resposta resp13 = new RespostaSimples("sabe contar piada", "Contar piada é minha especialidade!");
+        Resposta resp15 = new RespostaSimples("quem eh o presidente do Brasil", "O atual presidente do Brasil é o Jair Messias Bolsonaro");
         
         Resposta resp4 = new RespostaSimples("voce sabe fazer", "Eu sei contar piadas, sei resolver a formula de bhaskara e posso calcular investimentos pra você!");
         
@@ -62,6 +63,7 @@ public class Project_chatbot {
         bot.adiciona(resp12);
         bot.adiciona(resp13);
         bot.adiciona(resp14);
+        bot.adiciona(resp15);
         
         System.out.println("-----------------------------------");
 
