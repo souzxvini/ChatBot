@@ -13,9 +13,6 @@ public class RespostaAleatoria extends Resposta{
             System.out.println("Key '" + this.palavraChave +"' + resposta registrados com Sucesso!");
             this.piadas = piadas;
         }
-        else{
-            System.out.println("palavra invalida");
-        }
     }
 
     public String getPalavraChave() {
