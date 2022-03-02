@@ -55,7 +55,7 @@ public class RespostaInvestimento extends Resposta {
                     System.out.println("BOT: Calculos encerrados!");
                     break;
                 default:
-                    System.out.println("Não entendi,insira sua resposta novamente!**ultima tentativa**");
+                    System.out.println("Nao entendi,insira sua resposta novamente!**ultima tentativa**");
                     
                     decisao2 = entrada.next().charAt(0);
                     switch (decisao) {
