@@ -8,47 +8,47 @@ public class Project_chatbot {
 
         Chatbot bot = new Chatbot();
 
-        // criando palavras chaves e respostas, o primeiro parametro é a palavra chave e o segundo parametro é a resposta
+        // criando palavras chaves e respostas, o primeiro parametro eh a palavra chave e o segundo parametro eh a resposta
         Resposta resp1 = new RespostaSimples("seu nome", "Eu sou o anhembiBot");
-        Resposta resp2 = new RespostaSimples("oi", "Olá, no que posso ajudar?");
-        Resposta resp3 = new RespostaSimples("sabe contar piadas", "Contar piada é minha especialidade!");
-        Resposta resp13 = new RespostaSimples("sabe contar piada", "Contar piada é minha especialidade!");
-        Resposta resp15 = new RespostaSimples("quem eh o presidente do Brasil", "O atual presidente do Brasil é o Jair Messias Bolsonaro");
+        Resposta resp2 = new RespostaSimples("oi", "Ola, no que posso ajudar?");
+        Resposta resp3 = new RespostaSimples("sabe contar piadas", "Contar piada eh minha especialidade!");
+        Resposta resp13 = new RespostaSimples("sabe contar piada", "Contar piada eh minha especialidade!");
+        Resposta resp15 = new RespostaSimples("quem eh o presidente do Brasil", "O atual presidente do Brasil eh o Jair Messias Bolsonaro");
         
-        Resposta resp4 = new RespostaSimples("voce sabe fazer", "Eu sei contar piadas, sei resolver a formula de bhaskara e posso calcular investimentos pra você!");
+        Resposta resp4 = new RespostaSimples("voce sabe fazer", "Eu sei contar piadas, sei resolver a formula de bhaskara e posso calcular investimentos pra voce!");
         
         Resposta resp5 = new RespostaSimples("obrigado", "Estou aqui pra isso!");
-        Resposta resp6 = new RespostaSimples("tchau", "Tchau! Qualquer coisa estou a disposição!");
+        Resposta resp6 = new RespostaSimples("tchau", "Tchau! Qualquer coisa estou a disposicao!");
 
-        /*O parâmetro passado nesse método será a key para o bot iniciar o cálculo da formula de bhaskara*/
+        /*O parametro passado nesse metodo sera a key para o bot iniciar o calculo da formula de bhaskara*/
         Resposta resp10 = new RespostaConta("bhaskara");
 
-        /*O parãmetro que for passado nesse método, ao ser digitado pelo usuário no chat, irá encerrar a conversa*/
+        /*O parametro que for passado nesse metodo, ao ser digitado pelo usuario no chat, ira encerrar a conversa*/
         Resposta resp11 = new Sair("/sair");
 
         /*Aqui eu criei um array list para armazenar piadas*/
         ArrayList<String> piadas = new ArrayList();
-        piadas.add("Qual é o peixe que pulou da monttanha? AAAAAAAAAtum");
-        piadas.add("Sabe o que o melão estava fazendo de mãos dadas com o mamão perto de Copacabana?\n"
-                + "Levando o mamão papaya."
+        piadas.add("Qual eh o peixe que pulou da monttanha? AAAAAAAAAtum");
+        piadas.add("Sabe o que o melao estava fazendo de maos dadas com o mamao perto de Copacabana?\n"
+                + "Levando o mamao papaya."
         );
-        piadas.add("Você sabe como deixar alguém curioso?\n"
+        piadas.add("Voce sabe como deixar alguem curioso?\n"
                 + "\n"
-                + "Eu conto amanhã.");
-        /*Aqui, o primeiro parâmetro é a palavra chave que vai retornar alguma piada do array list piadas*/
+                + "Eu conto amanha.");
+        /*Aqui, o primeiro parametro eh a palavra chave que vai retornar alguma piada do array list piadas*/
         Resposta resp7 = new RespostaAleatoria("uma piada", piadas);
 
-        /*O parâmetro passado nesse método será a key para o bot responder as horas*/
+        /*O parametro passado nesse metodo sera a key para o bot responder as horas*/
         Resposta resp8 = new RespostaHora("horas");
 
-        /*O parâmetro passado nesse método será a key para o bot responder a Data*/
+        /*O parametro passado nesse método sera a key para o bot responder a Data*/
         Resposta resp9 = new RespostaData("data");
         
         Resposta resp12 = new RespostaInvestimento("investimento");
         
         Resposta resp14 = new RespostaTabuada("tabuada");
 
-        /*Após criar todas as respostas, você deve adicionar elas em um array de respostas na classe Chatbot*/
+        /*Apos criar todas as respostas, voce deve adicionar elas em um array de respostas na classe Chatbot*/
         bot.adiciona(resp1);
         bot.adiciona(resp2);
         bot.adiciona(resp3);
