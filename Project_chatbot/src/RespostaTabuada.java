@@ -35,6 +35,10 @@ public class RespostaTabuada extends Resposta {
                 CalcularTabuada();
                 break;
             case "n":
+                System.out.println("BOT: Calculos encerrados!");
+                break;
+            case "N":
+                System.out.println("BOT: Calculos encerrados!");
                 break;
             default:
                 System.out.println("BOT: Nao entendi,insira sua resposta novamente(S/N)  **ultima tentativa**");
@@ -47,8 +51,10 @@ public class RespostaTabuada extends Resposta {
                         CalcularTabuada();
                         break;
                     case "n":
+                        System.out.println("BOT: Calculos encerrados!");
                         break;
                     case "N":
+                        System.out.println("BOT: Calculos encerrados!");
                         break;
                     default:
                         System.out.println("BOT: Calculos encerrados!");
@@ -61,7 +67,7 @@ public class RespostaTabuada extends Resposta {
     @Override
     public String produz() {
         CalcularTabuada();
-        return "conta encerrada";
+        return this.resposta = "No que posso te ajudar agora?";
 
     }
 }
