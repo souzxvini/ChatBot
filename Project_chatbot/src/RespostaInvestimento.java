@@ -27,12 +27,20 @@ public class RespostaInvestimento extends Resposta {
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i <= 0; i++) {
-            System.out.println("Saldo do investimento após :" + i + " meses" + (mil.format(valorInicial)));
+            if( i < 10){
+                System.out.println("Saldo do investimento após :" + i + " mes " + (mil.format(valorInicial)));
+            } else{
+                System.out.println("Saldo do investimento após :" + i + " meses " + (mil.format(valorInicial)));
+            }
+            
             for (int j = 1; j <= meses; j++) {
                 saldo += valorMensal;
                 saldo += saldo * taxa;
-
-                System.out.println("Saldo do investimento após :" + j + " meses" + (mil.format(saldo + valorInicial)));
+                if( j < 2){
+                System.out.println("Saldo do investimento após :" + j + " mes " + (mil.format(saldo + valorInicial)));
+            } else{
+                System.out.println("Saldo do investimento após :" + j + " meses " + (mil.format(saldo + valorInicial)));
+            }
 
             }
             System.out.println("Investimento calculado!");
