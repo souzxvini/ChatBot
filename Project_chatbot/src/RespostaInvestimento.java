@@ -39,7 +39,7 @@ public class RespostaInvestimento extends Resposta {
 
             Scanner entrada = new Scanner(System.in);
 
-            System.out.println("BOT: Quer calcular outro investimento? S/N ");
+            System.out.println("BOT: Quer calcular outro investimento? (S/N)");
             decisao = entrada.next().charAt(0);
 
             switch (decisao) {
@@ -50,15 +50,15 @@ public class RespostaInvestimento extends Resposta {
                     produz();
                     break;
                 case 'N':
+                    System.out.println("BOT: Calculos encerrados!");
                     break;
                 case 'n':
                     System.out.println("BOT: Calculos encerrados!");
                     break;
                 default:
-                    System.out.println("Nao entendi,insira sua resposta novamente!**ultima tentativa**");
-                    
+                    System.out.println("BOT: Nao entendi,insira sua resposta novamente(S/N)**ultima tentativa**");
                     decisao2 = entrada.next().charAt(0);
-                    switch (decisao) {
+                    switch (decisao2) {
                         case 'S':
                             produz();
                             break;
@@ -66,8 +66,10 @@ public class RespostaInvestimento extends Resposta {
                             produz();
                             break;
                         case 'N':
+                            System.out.println("BOT: Calculos encerrados!");
                             break;
                         case 'n':
+                            System.out.println("BOT: Calculos encerrados!");
                             break;
                         default:
                             System.out.println("BOT: Calculos encerrados!");
