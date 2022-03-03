@@ -13,9 +13,10 @@ public class Project_chatbot {
         Resposta resp2 = new RespostaSimples("oi", "Ola, no que posso ajudar?");
         Resposta resp3 = new RespostaSimples("sabe contar piadas", "Contar piada eh minha especialidade!");
         Resposta resp13 = new RespostaSimples("sabe contar piada", "Contar piada eh minha especialidade!");
-        Resposta resp15 = new RespostaSimples("quem eh o presidente do Brasil", "O atual presidente do Brasil eh o Jair Messias Bolsonaro");
+        Resposta resp15 = new RespostaSimples("quem eh o presidente do brasil", "O atual presidente do Brasil eh o Jair Messias Bolsonaro");
         
-        Resposta resp4 = new RespostaSimples("voce sabe fazer", "Eu sei contar piadas, sei resolver a formula de bhaskara e posso calcular investimentos pra voce!");
+        Resposta resp4 = new RespostaSimples("voce sabe fazer", "Eu sei contar piadas, sei resolver a formula de bhaskara,"
+                + "\n posso calcular investimentos pra voce e fazer a tabuada de qualquer numero!");
         
         Resposta resp5 = new RespostaSimples("obrigado", "Estou aqui pra isso!");
         Resposta resp6 = new RespostaSimples("tchau", "Tchau! Qualquer coisa estou a disposicao!");
@@ -37,6 +38,7 @@ public class Project_chatbot {
                 + "Eu conto amanha.");
         /*Aqui, o primeiro parametro eh a palavra chave que vai retornar alguma piada do array list piadas*/
         Resposta resp7 = new RespostaAleatoria("uma piada", piadas);
+        Resposta resp16 = new RespostaAleatoria("outra piada", piadas);
 
         /*O parametro passado nesse metodo sera a key para o bot responder as horas*/
         Resposta resp8 = new RespostaHora("horas");
@@ -64,6 +66,7 @@ public class Project_chatbot {
         bot.adiciona(resp13);
         bot.adiciona(resp14);
         bot.adiciona(resp15);
+        bot.adiciona(resp16);
         
         System.out.println("-----------------------------------");
 
